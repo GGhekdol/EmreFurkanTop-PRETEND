@@ -9,7 +9,6 @@
 <body>
 
     <div id="scroll-progress"></div>
-
     <div class="cursor-glow"></div>
 
     <nav id="navbar">
@@ -18,7 +17,11 @@
             <li><a href="#home" class="hover-link">Ana Sayfa</a></li>
             <li><a href="#about" class="hover-link">Hikayemiz</a></li>
             <li><a href="#features" class="hover-link">Öne Çıkanlar</a></li>
+            <li><a href="#products" class="hover-link">Ürünler</a></li>
         </ul>
+        <button id="theme-toggle" aria-label="Tema Değiştir">
+            <span class="toggle-icon">🌙</span>
+        </button>
     </nav>
 
     <header id="home" class="hero">
@@ -37,9 +40,6 @@
             <span> YENİ SEZON YAYINDA</span>
             <span> SINIRLI STOK</span>
             <span> %100 SAF PAMUK</span>
-            <span> YENİ SEZON YAYINDA</span>
-            <span> SINIRLI STOK</span>
-            <span> %100 SAF PAMUK</span>
         </div>
     </div>
 
@@ -50,7 +50,7 @@
                 <p>İzmir'in dinamik sokak kültüründen ilham alarak yola çıktık. PRETEND, sadece bir marka değil; sıradanlığa meydan okuyanların ortak dilidir.</p>
             </div>
             <div class="about-image parallax-box reveal-right">
-                <img src="https://www.pretend-it.com/cdn/shop/files/ACID_MAIL-05.png?v=1769346618&width=400" alt="">
+                <img src="https://www.pretend-it.com/cdn/shop/files/ACID_MAIL-05.png?v=1769346618&width=400" alt="Hikayemiz">
             </div>
         </div>
     </section>
@@ -60,17 +60,14 @@
             <h2 class="reveal-up">Neden Biz?</h2>
             <div class="features-grid">
                 <div class="feature-card tilt-card reveal-up">
-                    
                     <h3>Özgün Tasarım</h3>
                     <p>Sokak sanatçılarından ilham alınarak sınırlı sayıda üretilir.</p>
                 </div>
                 <div class="feature-card tilt-card reveal-up delay-1">
-                    
                     <h3>Premium Kalite</h3>
                     <p>Uzun ömürlü kullanım için yüksek gramajlı, %100 saf pamuk.</p>
                 </div>
                 <div class="feature-card tilt-card reveal-up delay-2">
-                    
                     <h3>Rahat Kesim</h3>
                     <p>Oversize kalıplarımız ile konforu ve şıklığı yaşa.</p>
                 </div>
@@ -78,41 +75,120 @@
         </div>
     </section>
 
-    <section id="features" class="section bg-dark">
+    <section id="products" class="section bg-dark">
         <div class="container text-center">
-            <h2 class="reveal-up">Ürünlerimiz</h2>
-            <div class="features-grid">
-                <div class="feature-card tilt-card reveal-up">
-                    
-                    <div><img  src="https://www.pretend-it.com/cdn/shop/files/PRETENDSTATETEE.png?v=1779312251&width=600" alt=""style="width: 300px; height: 400px;" ></div>
+            <h2 class="reveal-up hacker-text" data-value="KOLEKSİYON">KOLEKSİYON</h2>
+            
+            <div class="search-container reveal-up">
+                <input type="text" id="productSearch" placeholder="Kıyafet ismi veya ürün ID ara (Örn: PR-01, HOODİE)...">
+                <span class="search-bar-border"></span>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card tilt-card reveal-up" data-id="PR-01" data-name="hoodie sweatshirt sweat">
+                    <div class="product-info-top">
+                        <span class="product-id-tag">ID: PR-01</span>
+                        <h4 class="product-title">HOODİE</h4>
+                    </div>
+                    <div class="product-slider">
+                        <button class="slider-btn prev-btn">&lt;</button>
+                        <div class="slider-images">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/FADEDZIP.png?v=1765290150&width=600" class="active" alt="">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/GREENHOODIE.png?v=1770663346&width=600" class="" alt="">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/BLUEZIP.png?v=1765299076&width=600" class="" alt="">
+                            
+                        </div>
+                        <button class="slider-btn next-btn">&gt;</button>
+                    </div>
                 </div>
-                <div class="feature-card tilt-card reveal-up">
-                    
-                    <div><img  src="https://www.pretend-it.com/cdn/shop/files/PRETENDSTATEACID.png?v=1779312692&width=600" alt=""style="width: 300px; height: 400px;" ></div>
+
+                <div class="product-card tilt-card reveal-up" data-id="PR-02" data-name="t-shirt tshirt tişört">
+                    <div class="product-info-top">
+                        <span class="product-id-tag">ID: PR-02</span>
+                        <h4 class="product-title">T-SHİRT</h4>
+                    </div>
+                    <div class="product-slider">
+                        <button class="slider-btn prev-btn">&lt;</button>
+                        <div class="slider-images">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/PRETENDSTATETEE.png?v=1779312251&width=600" class="active" alt="State Acid Ön">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/BLACKBIG-P.png?v=1765284238&width=600" class="" alt="State Acid Ön">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/PRETENDMAFIABACK.png?v=1779316626&width=600" class="" alt="State Acid Ön">
+                            
+                        </div>
+                        <button class="slider-btn next-btn">&gt;</button>
+                    </div>
                 </div>
-                <div class="feature-card tilt-card reveal-up">
-                    
-                    <div><img  src="https://www.pretend-it.com/cdn/shop/files/FLAMECOLLEGE.png?v=1779311256&width=600" alt=""style="width: 300px; height: 400px;" ></div>
+
+                <div class="product-card tilt-card reveal-up" data-id="PR-03" data-name="short şort ">
+                    <div class="product-info-top">
+                        <span class="product-id-tag">ID: PR-03</span>
+                        <h4 class="product-title">SHORT</h4>
+                    </div>
+                    <div class="product-slider">
+                        <button class="slider-btn prev-btn">&lt;</button>
+                        <div class="slider-images">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/FADED_SHORTSU.png?v=1778622724&width=600" class="active" alt="Flame College 1">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/ACID_SHORTS_805f3f3a-c16a-42df-a7ee-2db259a74f0c.png?v=1778622750&width=600" class="" alt="State Acid Ön">
+                            
+                        </div>
+                        <button class="slider-btn next-btn">&gt;</button>
+                    </div>
                 </div>
-                <div class="feature-card tilt-card reveal-up">
-                    
-                    <div><img  src="https://www.pretend-it.com/cdn/shop/files/BLACKBIG-P.png?v=1765284238&width=600" alt=""style="width: 300px; height: 400px;" ></div>
+
+                <div class="product-card tilt-card reveal-up" data-id="PR-04" data-name="eşofman Sweatpant ">
+                    <div class="product-info-top">
+                        <span class="product-id-tag">ID: PR-04</span>
+                        <h4 class="product-title">SWEATPANTS</h4>
+                    </div>
+                    <div class="product-slider">
+                        <button class="slider-btn prev-btn">&lt;</button>
+                        <div class="slider-images">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/BLACKSP.png?v=1765289913&width=600" class="active" alt="Cargo Ön">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/DISTRESSEDSWEATPANTS.png?v=1765287066&width=600" class="" alt="State Acid Ön">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/PERFGREY.png?v=1765292912&width=600" class="" alt="State Acid Ön">
+                        </div>
+                        <button class="slider-btn next-btn">&gt;</button>
+                    </div>
                 </div>
-                <div class="feature-card tilt-card reveal-up">
-                    
-                    <div><img  src="https://www.pretend-it.com/cdn/shop/files/FADED_SHORTSU.png?v=1778622724&width=600" alt=""style="width: 300px; height: 400px;" ></div>
+
+                <div class="product-card tilt-card reveal-up" data-id="PR-05" data-name="tank top atlet ">
+                    <div class="product-info-top">
+                        <span class="product-id-tag">ID: PR-05</span>
+                        <h4 class="product-title">Tank Top</h4>
+                    </div>
+                    <div class="product-slider">
+                        <button class="slider-btn prev-btn">&lt;</button>
+                        <div class="slider-images">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/DARKDENIMTANK_30f9b4eb-4765-4627-8d23-15100e9d1152.png?v=1776276999&width=600" class="active" alt="Şort Ön">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/TANK03.png?v=1770219438&width=600" class="" alt="State Acid Ön">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/TANK06.png?v=1770219781&width=600" class="" alt="State Acid Ön">
+                        </div>
+                        <button class="slider-btn next-btn">&gt;</button>
+                    </div>
                 </div>
-                <div class="feature-card tilt-card reveal-up">
-                    
-                    <div><img  src="https://www.pretend-it.com/cdn/shop/files/TANK06.png?v=1770219781&width=600" alt=""style="width: 300px; height: 400px;" ></div>
+
+                <div class="product-card tilt-card reveal-up" data-id="PR-06" data-name="accessories aksesuarlar">
+                    <div class="product-info-top">
+                        <span class="product-id-tag">ID: PR-06</span>
+                        <h4 class="product-title">ACCESSORİES</h4>
+                    </div>
+                    <div class="product-slider">
+                        <button class="slider-btn prev-btn">&lt;</button>
+                        <div class="slider-images">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/WASHEDBEANIE.png?v=1765294606&width=600" class="active" alt="Tank Ön">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/ESSENTIALBEANIE.png?v=1765294283&width=600" class="" alt="State Acid Ön">
+                            <img src="https://www.pretend-it.com/cdn/shop/files/PREMIUMBEANIE.png?v=1765294545&width=600" class="" alt="State Acid Ön">
+                        </div>
+                        <button class="slider-btn next-btn">&gt;</button>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="contact" class="section">
         <div class="container">
             <h2 class="reveal-up hacker-text text-center" data-value="BİZE ULAŞ">BİZE ULAŞ</h2>
-            
             <div class="contact-wrapper">
                 <div class="contact-info reveal-left">
                     <div class="info-item">
@@ -123,7 +199,6 @@
                         <h3><span class="neon-icon">✉️</span> E-Posta</h3>
                         <p>info@pretend.com</p>
                     </div>
-                    
                 </div>
 
                 <form class="contact-form reveal-right" id="contactForm">
